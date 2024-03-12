@@ -1,0 +1,41 @@
+/* makes sizing simpler */
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  /*Color*/
+  --primary-Tomato: hsl(4, 100%, 67%);
+  --neutral-Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --neutral-Charcoal-Grey: hsl(235, 18%, 26%);
+  --neutral-Grey: hsl(231, 7%, 60%);
+  --neutral-White: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
