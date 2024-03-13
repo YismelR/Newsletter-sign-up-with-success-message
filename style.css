@@ -107,11 +107,6 @@ input {
   border-radius: 10px;
 }
 
-label {
-  font-size: 0.8rem;
-  font-family: "Roboto-bold", sans-serif;
-}
-
 #email {
   padding-left: 1.5rem;
   border: 1px solid var(--neutral-Grey);
@@ -132,6 +127,17 @@ input:hover {
   box-shadow: 2px 20px 30px -15px var(--primary-Tomato);
 }
 
+.email-msg {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-family: "Roboto-bold", sans-serif;
+}
+
+.email-msg p {
+  color: var(--primary-Tomato);
+}
+
 /*sign-up form styles end*/
 
 /*Success message styles start*/
@@ -142,6 +148,7 @@ input:hover {
   row-gap: 2rem;
   padding: 40px 61px 61px;
   border-radius: 30px;
+  display: none;
 }
 
 .success-p {

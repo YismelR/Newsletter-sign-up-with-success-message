@@ -16,10 +16,11 @@
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <!-- Sign-up form start -->
-    <!-- <div class="subs-card-component">
+    <div class="subs-card-component">
       <div class="subscribe-layout">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -34,8 +35,11 @@
           </p>
           <p><img src="assets/images/icon-list.svg" />And much more!</p>
         </div>
-        <form>
-          <label for="email"> Email address </label>
+        <form novalidate>
+          <div class="email-msg">
+            <label for="email"> Email address </label>
+            <p class="error-msg"></p>
+          </div>
           <input id="email" type="email" placeholder="email@company.com" />
           <input
             class="submit"
@@ -47,7 +51,7 @@
       <div class="subs-img">
         <img src="assets/images/illustration-sign-up-desktop.svg" />
       </div>
-    </div> -->
+    </div>
 
     <!-- Sign-up form end -->
 
