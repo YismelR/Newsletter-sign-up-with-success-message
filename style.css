@@ -39,6 +39,7 @@ input {
 :root {
   /*Color*/
   --primary-Tomato: hsl(4, 100%, 67%);
+  --primary-pink: hsl(349, 100%, 66.5%);
   --neutral-Dark-Slate-Grey: hsl(234, 29%, 20%);
   --neutral-Charcoal-Grey: hsl(235, 18%, 26%);
   --neutral-Grey: hsl(231, 7%, 60%);
@@ -112,6 +113,18 @@ label {
   background-color: var(--neutral-Dark-Slate-Grey);
   color: var(--neutral-White);
   font-family: "Roboto-bold";
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-pink),
+    var(--primary-Tomato)
+  );
 }
 
 .attribution {
